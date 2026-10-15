@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Flappy</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- MediaPipe dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="ui-layer">
+    <button id="fullscreen-btn" title="Toggle Fullscreen (F)">⛶</button>
+  </div>
+  
+  <canvas id="game-canvas"></canvas>
+  
+  <div id="preview-container">
+    <video id="webcam-video" playsinline></video>
+    <canvas id="preview-canvas"></canvas>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
